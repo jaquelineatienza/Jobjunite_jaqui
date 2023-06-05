@@ -20,7 +20,17 @@
         </div>    
     </nav>
 </header>
+<main id="main">
     <form class="row g-3">
+      <div class="col-md-10" >
+        <select  id="opccionRol"  for="validationDefault01" class="form-select" aria-label="Default select example" required>
+          <option id="select" selected>eliga su rol</option>
+          <option  value="1">postulante</option>
+          <option  value="2">empleador comercial</option>
+          <option  value="3">empleador no cormecial</option>
+        </select>
+      </div>
+      <!-- ingrese su nombre y apellido-->
         <div class="col-md-4">
           <label for="validationDefault01" class="form-label"
             >ingrese su nombre </label
@@ -47,6 +57,7 @@
             required
           />
         </div>
+      <!--dni-->
         <div class="col-md-4">
           <label for="validationDefaultUsername" class="form-label"
             >ingrese su DNI</label
@@ -61,6 +72,7 @@
             required
           />
         </div>
+        <!--cuil-->
         <div class="col-md-4">
           <label for="validationDefaultUsername" class="form-label"
             >ingrese su cuil</label
@@ -77,33 +89,9 @@
             />
           </div>
         </div>
-        <div class="col-md-4" >
-            <select for="validationDefault01" class="form-select" aria-label="Default select example" required>
-              <option selected>estado academico</option>
-              <option value="1">estudiante</option>
-              <option value="2">graduado</option>
-              <option value="3">no estudio</option>
-            </select>
-          </div>
-          <div class="col-md-4" >
-            <select for="validationDefault01" class="form-select" aria-label="Default select example" required>
-              <option selected>estado laboral</option>
-              <option value="1">desempleado</option>
-              <option value="2">actualmente trabajando</option>
-            </select>
-          </div>
-          <div class="col-md-4" >
-            <select for="validationDefault01" class="form-select" aria-label="Default select example" required>
-              <option selected>nacionalidad</option>
-              <option value="1">Argentina</option>
-              <option value="2">Paraguay</option>
-              <option value="3">Uruguay</option>
-              <option value="4">colombia</option>
-              <option value="5">bolivia</option>
-              <option value="6">chile</option>
-            </select>
-          </div>
-
+        <div class="col-md-6" id="estadoLaboral">
+          
+        </div>
         <div class="col-md-4">
           <label for="validationDefault01" class="form-label">fecha de nacimiento</label>
           <input
@@ -115,6 +103,18 @@
             required
           />
         </div>
+        <div class="col-md-4" >
+          <select for="validationDefault01" class="form-select" aria-label="Default select example" required>
+            <option selected>nacionalidad</option>
+            <option value="1">Argentina</option>
+            <option value="2">Paraguay</option>
+            <option value="3">Uruguay</option>
+            <option value="4">colombia</option>
+            <option value="5">bolivia</option>
+            <option value="6">chile</option>
+          </select>
+          </div>
+
         <div class="col-md-4">
           <label for="validationDefault01" class="form-label">domicilio</label>
           <input
@@ -125,8 +125,11 @@
             required
           />
         </div>
-       
         </div>
+        <div id="rubro">
+
+        </div>
+        
         <div class="col-md-4">
           <label for="validationDefaultUsername" class="form-label">numero de telefono</label>
           <div class="input-group">
@@ -139,5 +142,7 @@
         <button class="btn btn-primary" type="submit"><a class="boton" href="#">registrarse</a></button>
         </div>
       </form>
+    </main>
+      <script src="./js/main.js"></script>
 </body>
 </html>
